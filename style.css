@@ -36,13 +36,10 @@ h2 {
     overflow: hidden;
     border: 3px solid orange;
     position: relative;
+    box-shadow: 1px 1px 3px 3px rgb(143, 142, 142);
     display: flex;
         margin-left: 190px;
         margin-right: 190px;
-}
-
-.logo {
-    height: 100px;
 }
 
 .left-bar {
@@ -59,9 +56,20 @@ h2 {
         border: 2px solid green;
     }
     div {
+        display: flex;
         border: 2px solid green;
         padding: 40px;
         margin: 20px;
+        justify-content: center;
+        svg {
+            height: 100px;
+            width: 100px;
+            transition: transform 0.3s ease;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+        }
     }
 }
 
