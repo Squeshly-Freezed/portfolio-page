@@ -19,6 +19,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -45,6 +47,8 @@ h1 {
     margin-left: 250px;
     margin-right: 250px;
     min-width: 80px;
+    align-self: center;
+    padding: 10px;
 }
 
 h2 {
@@ -60,7 +64,6 @@ h2 {
     background-color: var(--background-color);
     border-radius: 6px;
     overflow: hidden;
-    position: relative;
     box-shadow: 1px 1px 3px 3px rgb(143, 142, 142);
     display: flex;
         margin-left: 190px;
@@ -108,9 +111,11 @@ h2 {
         gap: 20px;
         margin: 20px;
         div {
+        
             iframe {
                 border-radius: 5px;
                 aspect-ratio: 1 / 1;
+                box-shadow: 1px 1px 3px 3px rgb(143, 142, 142);
             }
         }
     }
@@ -142,6 +147,13 @@ h2 {
 
 .footer {
     grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    img {
+        vertical-align: middle;
+        height: 50px;
+        background-color: var(--background-color);
+    }
 }
 
 @media (max-width: 1210px) {
